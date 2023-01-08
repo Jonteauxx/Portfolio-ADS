@@ -8,4 +8,4 @@ Ik studeer ICT, specialisatie in Network and Systems Engineering. In mijn derde 
 ## Mijn skills
 
 * DataCamp preclasses
-- [Introduction to Python](/DataCamp/"Introduction to Python.jpeg")
+- [Introduction to Python][![name](/DataCamp/Introduction%20to%20Python.png)]
