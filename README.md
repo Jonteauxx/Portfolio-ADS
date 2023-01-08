@@ -7,7 +7,8 @@ Ik studeer ICT, specialisatie in Network and Systems Engineering. In mijn derde 
 
 ## Mijn skills
 
-* DataCamp preclasses
+* DataCamp preclass courses:
+
   - [Introduction to Python](/DataCamp/Introduction%20to%20Python.png)
   - [Intermediate Python](/DataCamp/Intermediate%20Python.png)
   - [Python Data Science Toolbox (Part 1)](/DataCamp/Python%20Data%20Science%20Toolbox%20(Part%201).png)
@@ -24,3 +25,5 @@ Ik studeer ICT, specialisatie in Network and Systems Engineering. In mijn derde 
   - [Time Series Analysis in Python](/DataCamp/Time%20Series%20Analysis%20in%20Python.png)
   - [Joining Data with pandas](/DataCamp/Joining%20Data%20with%20Pandas.png)
   - [Machine Learning for Time Series Data in Python](/DataCamp/Machine%20Learning%20for%20Time%20Series%20Data%20in%20Python.png)
+
+* Git version control
