@@ -1,9 +1,14 @@
 # About me
 ## Wie ben ik?
-Ik ben T'nayro Herdigein, 26 jaar en student aan de Haagse Hogeschool in Delft. 
+Naam: T'nayro Herdigein
+Leeftijd: 26 jaar
+Beroep: Student
+Studie: HBO ICT, Network and Systems Engineering
 
 ## Wat doe ik?
-Ik studeer ICT, specialisatie in Network and Systems Engineering. In mijn derde studiejaar heb ik voor de minor Applied Data Science gekozen...
+Ik zit in mijn derde jaar van mijn studie en ik heb voor de minor Applied Data Science gekozen. 
+Start: 30-09-2022 
+End:   01-02-2023
 
 ## Mijn skills
 
