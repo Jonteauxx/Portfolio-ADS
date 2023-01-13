@@ -1,16 +1,17 @@
 # About me
-## Wie ben ik?
 - Naam: T'nayro Herdigein
 - Leeftijd: 26 jaar
 - Beroep: Student
 - Studie: HBO ICT, Network and Systems Engineering
+- Minor: Applied Data Science
 
-## Wat doe ik?
-- Ik zit in mijn derde jaar van mijn studie en ik heb voor de minor Applied Data Science gekozen. 
-- Start: 30-09-2022 
-- End:   01-02-2023
-
-## Mijn skills
+# Index
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
+## Headers
 
 * DataCamp preclass courses:
 
