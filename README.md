@@ -1,35 +1,24 @@
-# About me
+## About me
 - Naam: T'nayro Herdigein
 - Leeftijd: 26 jaar
 - Beroep: Student
 - Studie: HBO ICT, Network and Systems Engineering
 - Minor: Applied Data Science
 
-# Index
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
-## Headers
+## Table of Contents  
+- [DataCamp Course Certificates](#datacamp-course-certificates)
+- [Research Project](#research-project)
+- [Domain Knowledge](#domain-knowledge)
+- [Communication](#communication)
 
-* DataCamp preclass courses:
 
-  - [Introduction to Python](/DataCamp/Introduction%20to%20Python.png)
-  - [Intermediate Python](/DataCamp/Intermediate%20Python.png)
-  - [Python Data Science Toolbox (Part 1)](/DataCamp/Python%20Data%20Science%20Toolbox%20(Part%201).png)
-  - [Python Data Science Toolbox (Part 2)](/DataCamp/Python%20Data%20Science%20Toolbox%20(Part%202).png)
-  - [Statistical Thinking in Python (Part 1)](/DataCamp/Statistical%20Thinking%20in%20Python%20(Part%201).png)
-  - [Machine Learning with scikit-learn](/DataCamp/Machine%20Learning%20with%20scikit-learn.png)
-  - [Introduction to Data Visualization with Matplotlib](/DataCamp/Introduction%20to%20Data%20Visualization%20with%20Matplotlib.png)
-  - [Linear Classifiers in Python](/DataCamp/Linear%20Classifiers%20in%20Python.png)
-  - [Data Manipulation with pandas](/DataCamp/Data%20Manipulation%20with%20pandas.png)
-  - [Model Validation in Python](/DataCamp/Model%20Validation%20in%20Python.png)
-  - [Cleaning Data in Python](/DataCamp/Cleaning%20Data%20in%20Python.png)
-  - [Exploratory Data Analysis in Python](/DataCamp/Exploratory%20Data%20Analysis%20in%20Python.png)
-  - [Manipulatin Time Series Data in Python](/DataCamp/Manipulating%20Time%20Series%20Data%20in%20Python.png)
-  - [Time Series Analysis in Python](/DataCamp/Time%20Series%20Analysis%20in%20Python.png)
-  - [Joining Data with pandas](/DataCamp/Joining%20Data%20with%20Pandas.png)
-  - [Machine Learning for Time Series Data in Python](/DataCamp/Machine%20Learning%20for%20Time%20Series%20Data%20in%20Python.png)
+## DataCamp Course Certificates
+Alvorens de start van de minor Applied Data Science, was Python nog heel onbekend voor mij. Door de nodige python kennis te ontwikkellen kreeg ik verplichte cursussen om te volgen, die ook hebben meegeholpen aan het uiteindelijke resultaat voor de minor. Deze cursussen waren te volgen op DataCamp en hiervoor kreeg ik voor elke behaalde cursus een [certificaat](/DataCamp) 
 
-* Git version control
+## Research Project
+
+
+## Domain Knowledge
+
+## Communication 
+
