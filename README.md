@@ -42,16 +42,16 @@ Uit onderzoek en gesprekken met docenten is gebleken dat de beste oplossing voor
 #### Het project
 Dit hoofdstuk gaat over de literatuuronderzoek die hebben geleidt tot het kiezen van een model voor het trainen.\
 Het doel is om de beste manier te vinden om containers, met verschillende bestemmingen, op te stapelen op de kade zodat het proces vlotter en sneller verloopt. Om dit ook makkelijker te maken, hebben we besloten om alle containers dezelfde dimensies te geven.\
-Als eerst moeten we kijken naar de kade. Zoals in [deelvraag 1](#deelvragen) besproken, hebben wij eerst gekozen om een 3x3 kade te gebruiken. Rekeninghoudend met de Reach-stacker, die de containers verplaatst, heeft dit vele beperkingen. De container kan alleen via de bay kant een container pakken en plaatsen. Dit heeft heel veel invloed op de manier hoe wij een model zullen trainen namelijk op de 'reward-systeem' (wordt nog uitgelegd). 
+Als eerst moeten we kijken naar de kade. Zoals in [deelvraag 1](#deelvragen) besproken, hebben wij eerst gekozen om een 3x3 kade te gebruiken. Rekeninghoudend met de Reach-stacker, die de containers verplaatst, heeft dit vele beperkingen. De Reach-stacker kan alleen via de bay kant een container pakken en plaatsen. Dit heeft heel veel invloed op de manier hoe wij een model zullen trainen namelijk op de 'reward-systeem' (wordt nog uitgelegd). 
 
-Ook moeten wij rekening houden met de verschillende containers met verschillende (eind)bestemmingen. Wij willen het makkelijker maken voor de Reach-stacker om alles in één keer te kunnen pakken, zonder eerst andere containers te verschuiven. Dit hebben we kunnen realiseren door eerst dezelfde containers op een row of bay te sorteren alvorens een andere container te plaatsen. Ook rekeninghoudend met de volgorde waarop de containers geplaatst worden, worden de laatste containers onderaan geplaatst. Hierbij wordt naar de schema van inkomen en uitgaande schepen gekeken. 
+Ook moeten wij rekening houden met de verschillende containers met verschillende (eind)bestemmingen. Wij willen het makkelijker maken voor de Reach-stacker om alles in één keer te kunnen pakken, zonder eerst andere containers te verschuiven. Dit hebben we kunnen realiseren door eerst dezelfde containers op een row of bay te sorteren alvorens een andere container te plaatsen. Ook rekeninghoudend met de volgorde waarop de containers geplaatst worden, worden de laatste containers onderaan geplaatst. Hierbij wordt naar de schema van inkomende en uitgaande schepen gekeken. 
 
 -----------------------------
 
 #### Reinforcement Learning en PPO
 
 RL kan op verschillende manieren benadert worden. Bij RL hebben wij eerst een [Environment]() nodig. In ons geval is het een 3x3 kade die gevuld moet worden met verschillende containers. Om de optimale oplossing te krijgen, maken wij gebruik van een reward-systeem. Dit houdt in dat de [Agent]() bij elke plaatsing van een container, een positieve of negatieve reward kan krijgen. Dit is noodzakelijk voor het trainen van het model. Uit de rewards kan het model leren welke moves beter zijn. Elke move krijgt een reward, geeft een state terug en bepaald zijn volgende actie. 
-PPO is nieuw model van [OpenAI](https://openai.com/blog/openai-baselines-ppo/) en dat is Proximal Policy Optimization. De nadruk wordt op de Policy gelegd omdat de policy aangepast kan worden naar de specificaties van de trainer.
+PPO is nieuw model van [OpenAI](https://openai.com/blog/openai-baselines-ppo/) en dat is Proximal Policy Optimization. De nadruk wordt op de Policy gelegd omdat de policies aangepast kunnen worden naar de specificaties van de trainer.
 
 Onze reward-systeem bestaat uit enkele regels namelijk:
 - Containers mogen niet op de eerste bay geplaatst worden waardoor de Reach-stacker belemmerd wordt.
@@ -63,7 +63,7 @@ Onze reward-systeem bestaat uit enkele regels namelijk:
 ## Predictive Analysis
 
 In deze paragraaf laat ik zien wat ik heb bijgedragen aan het opleveren van de [finalcode]().  
-Als groep hadden we eerst besloten dat een ieder een model zou proberen te trainen zodat een ieder ook wist hoe RL werkt. Ik had een werkend model dat ongeveer dezelfde environment was als ons project.
+Als groep hadden we eerst besloten dat een ieder een model zou proberen te trainen zodat een ieder ook weet hoe RL werkt. Ik heb een soort werkend model dat ongeveer lijkt op de environment van het project. Dit was meer voor het begrijpen hoe RL werkt. Alhoewel het niet heeft bijgedragen aan [finalcode](), heeft het wel geholpen aan het beter begrijpen wat wij willen realiseren aan het project.  
 
 
 ## Communication 
