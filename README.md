@@ -18,6 +18,11 @@
 Voor de start van de minor Applied Data Science, was Python nog heel onbekend voor mij. Door de nodige python kennis te kunnen ontwikkellen kreeg ik verplichte cursussen om te volgen, die ook hebben meegeholpen aan het uiteindelijke resultaat voor de minor. Deze cursussen waren te volgen op DataCamp en hiervoor kreeg ik voor elke behaalde cursus een [certificaat](/DataCamp) 
 
 ## Research Project
+
+#### Task Definition
+#### Evaluation
+#### Conclusions
+#### Planning
 In dit hoofdstuk wordt kort uitgeled wat de probleemstelling en doelstelling zijn en welke onderzoeksvragen hebben geleid tot het uiteindelijke resultaat.
 Dit project is de taak van [Cofano](https://www.cofano.nl/nl/) en gaat voornamelijk over het optimalisatieproces van het in- en uitladen van containers op een kade. Momenteel wordt dit proces nog handmatig door een persoon bepaald en uitgevoerd en dit leidt tot heel veel inefficiënt geplaatste containers. Dit heeft als gevolg dat zowel het inladen als het uitladen meer tijd kost. Het is aan ons toegewezen om hiervoor een oplossing voor te bedenken door gebruik te maken van Machine Learning. Wij willen namelijk de tijd, waarbij het proces wordt uitgevoerd, verkorten. Voordat wij van start zijn gegaan met het kiezen van een model, hebben wij eerst hoofdvragen en deelvragen geformuleerd. Dit heeft het makkelijker gemaakt voor ons om aan de slag te gaan
 
@@ -39,7 +44,9 @@ Uit onderzoek en gesprekken met docenten is gebleken dat de beste oplossing voor
 
 
 ## Domain Knowledge
-#### Het project
+#### Introduction of the subject field
+#### liuterature research
+#### Explanation of Terminology, jargo and definitions
 Dit hoofdstuk gaat over de literatuuronderzoek die hebben geleidt tot het kiezen van een model voor het trainen.\
 Het doel is om de beste manier te vinden om containers, met verschillende bestemmingen, op te stapelen op de kade zodat het proces vlotter en sneller verloopt. Om dit ook makkelijker te maken, hebben we besloten om alle containers dezelfde dimensies te geven.\
 Als eerst moeten we kijken naar de kade. Zoals in [deelvraag 1](#deelvragen) besproken, hebben wij eerst gekozen om een 3x3 kade te gebruiken. Rekeninghoudend met de Reach-stacker, die de containers verplaatst, heeft dit vele beperkingen. De Reach-stacker kan alleen via de bay kant een container pakken en plaatsen. Dit heeft heel veel invloed op de manier hoe wij een model zullen trainen namelijk op de 'reward-systeem' (wordt nog uitgelegd). 
@@ -61,7 +68,11 @@ Onze reward-systeem bestaat uit enkele regels namelijk:
 
 
 ## Predictive Analysis
-
+#### Selecting a Model
+#### Configuring a Model
+#### Training a Model
+#### Evaluating a Model
+#### Visualizing the outcome of a model
 In deze paragraaf laat ik zien wat ik heb bijgedragen aan het opleveren van de [finalcode]().  
 Als groep hadden we eerst besloten dat een ieder een model zou proberen te trainen zodat een ieder ook weet hoe RL werkt. Ik heb een soort werkend model dat ongeveer lijkt op de environment van het project. Dit was meer voor het begrijpen hoe RL werkt. Alhoewel het niet heeft bijgedragen aan [finalcode](), heeft het wel geholpen aan het beter begrijpen wat wij willen realiseren aan het project.  
 
