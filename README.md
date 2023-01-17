@@ -14,7 +14,15 @@
   - [Conclusions](#conclusions)
   - [Planning](#planning)
 - [Domain Knowledge](#domain-knowledge)
+  - [Introduction of the subject field](#introduction-of-the-subject-field)
+  - [Literature Research](#literature-research)
+  - [Explanation of Terminology, jargon and definitions](#explanation-of-terminology-jargon-and-definitions)   
 - [Predictive Analysis](#predictive-analysis)
+  - [Selecting a Model](#selecting-a-model)
+  - [Configuring a Model](#configuring-a-model)
+  - [Training a Model](#training-a-model)
+  - [Evaluating a Model](#evaluating-a-model)
+  - [Visualizing the outcome of a model](#visualizing-the-outcome-of-a-model)
 - [Communication](#communication)
 
 
@@ -55,6 +63,17 @@ Als eerst moeten we kijken naar de kade. Zoals in [deelvraag 1](#deelvragen) bes
 
 Ook moeten wij rekening houden met de verschillende containers met verschillende (eind)bestemmingen. Wij willen het makkelijker maken voor de Reach-stacker om alles in één keer te kunnen pakken, zonder eerst andere containers te verplaatsen. Dit hebben we kunnen realiseren door eerst dezelfde containers op een row of bay te sorteren alvorens een andere container te plaatsen. Ook rekeninghoudend met de volgorde waarop de containers geplaatst worden, worden de laatste containers onderaan geplaatst. Hierbij wordt naar de schema van inkomende en uitgaande schepen gekeken. 
 
+#### Reinforcement Learning en PPO
+
+RL kan op verschillende manieren benadert worden. Bij RL hebben wij eerst een [Environment]() nodig. In ons geval is het een 3x3 kade die gevuld moet worden met verschillende containers. Om de optimale oplossing te krijgen, maken wij gebruik van een reward-systeem. Dit houdt in dat de [Agent]() bij elke plaatsing van een container, een positieve of negatieve reward kan krijgen. Dit is noodzakelijk voor het trainen van het model. Uit de rewards kan het model leren welke moves beter zijn. Elke move krijgt een reward, geeft een state terug en bepaald zijn volgende actie. 
+PPO is nieuw model van [OpenAI](https://openai.com/blog/openai-baselines-ppo/) en dat is Proximal Policy Optimization.
+
+Onze reward-systeem bestaat uit enkele regels namelijk:
+- Containers mogen niet op de eerste bay geplaatst worden waardoor de Reach-stacker belemmerd wordt.
+- Container A moet zoveel mogelijk naast container A geplaats worden en dus geen plek ertussen openlaten.
+- Container C mag niet tussen containers A en A geplaatst worden.
+(nog enkele regels hier plaatsen)
+
 #### Literature research
 Dit hoofdstuk gaat over de literatuuronderzoek die hebben geleidt tot het kiezen van een model voor het trainen.\
 Het doel is om de beste manier te vinden om containers, met verschillende bestemmingen, op te stapelen op de kade zodat het proces vlotter en sneller verloopt.  
@@ -71,33 +90,24 @@ De belangrijkste terminolgies die in dit project voorkomen zijn:\
 **- Reinforcement Learning**: is één van de onderdelen van Machine Learning en gaat meer over hoe een Agent leert beslissingen te nemen in een environment om zo een hoog mogelijke reward te behalen. Elke stap resulteert in een positieve of negatieve reward. Aan de hand hiervan kan de Agent betere beslissingen maken met tijd. Een soort trial-and-error. Het uiteindelijke doel hiervan is dat de agent de totale beloning op lange termijn probeert te maximaliseren.  
 **- Environment**: De environment is de omgeving waar de Agent zijn interacties meeheeft, inclusief de staat waarin het systeem zich bevindt. De environment bevat onder andere ook het algoritme voor de rewards en penalties.  
 **- Agent**: De Agent is het model dat beslissingen neemt en acties uitvoert aan de hand van een set van acties.  
-**- Rewards en Penalties**:\
-**- Policies**:\
-**- States**:\
-**- Actions**:\
+**- Rewards en Penalties**:Het doel van de Agent is om beloningen te maximaliseren. Net zoals bij elk ML-algoritme, zullen de beloningen eerst bij 0 beginnen en veranderen volgens een bepaald algoritme. De Agent zal proberen de kosten van elke van zijn actiekeuzes te schatten, daarna zal de agent een actie ondernemen, vervolgens zal de agent de echte beloning van die actie ontvangen vanuit de omgeving en uiteindelijk zijn toekomstige voorspellingen voor die specifieke actie aanpassen.\
+**- Policies**: Hoe de logica en parameters gestructureerd worden\
+**- Actions**: De agent komt op één van de totaal mogelijke states tegen en verricht een actie. In ons geval kan de actie een bepaalde richting zijn.
 
 -----------------------------
 
-#### Reinforcement Learning en PPO
 
-RL kan op verschillende manieren benadert worden. Bij RL hebben wij eerst een [Environment]() nodig. In ons geval is het een 3x3 kade die gevuld moet worden met verschillende containers. Om de optimale oplossing te krijgen, maken wij gebruik van een reward-systeem. Dit houdt in dat de [Agent]() bij elke plaatsing van een container, een positieve of negatieve reward kan krijgen. Dit is noodzakelijk voor het trainen van het model. Uit de rewards kan het model leren welke moves beter zijn. Elke move krijgt een reward, geeft een state terug en bepaald zijn volgende actie. 
-PPO is nieuw model van [OpenAI](https://openai.com/blog/openai-baselines-ppo/) en dat is Proximal Policy Optimization.
-
-Onze reward-systeem bestaat uit enkele regels namelijk:
-- Containers mogen niet op de eerste bay geplaatst worden waardoor de Reach-stacker belemmerd wordt.
-- Container A moet zoveel mogelijk naast container A geplaats worden en dus geen plek ertussen openlaten.
-- Container C mag niet tussen containers A en A geplaatst worden.
-(nog enkele regels hier plaatsen)
 
 
 ## Predictive Analysis
+In deze paragraaf laat ik zien wat ik heb bijgedragen aan het opleveren van de [finalcode]().  
+Als groep hadden we eerst besloten dat een ieder een model zou proberen te trainen zodat een ieder ook weet hoe RL werkt. Ik heb een soort werkend model dat ongeveer lijkt op de environment van het project. Dit was meer voor het begrijpen hoe RL werkt. Alhoewel het niet heeft bijgedragen aan [finalcode](), heeft het wel geholpen aan het beter begrijpen wat wij willen realiseren aan het project.  
+
 #### Selecting a Model
 #### Configuring a Model
 #### Training a Model
 #### Evaluating a Model
 #### Visualizing the outcome of a model
-In deze paragraaf laat ik zien wat ik heb bijgedragen aan het opleveren van de [finalcode]().  
-Als groep hadden we eerst besloten dat een ieder een model zou proberen te trainen zodat een ieder ook weet hoe RL werkt. Ik heb een soort werkend model dat ongeveer lijkt op de environment van het project. Dit was meer voor het begrijpen hoe RL werkt. Alhoewel het niet heeft bijgedragen aan [finalcode](), heeft het wel geholpen aan het beter begrijpen wat wij willen realiseren aan het project.  
 
 
 ## Communication 
