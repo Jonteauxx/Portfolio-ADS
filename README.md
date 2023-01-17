@@ -104,6 +104,7 @@ In deze paragraaf laat ik zien wat ik heb bijgedragen aan het opleveren van de [
 Als groep hadden we eerst besloten dat een ieder een model zou proberen te trainen zodat een ieder ook weet hoe RL werkt. Ik heb een soort werkend model dat ongeveer lijkt op de environment van het project. Dit was meer voor het begrijpen hoe RL werkt. Alhoewel het niet heeft bijgedragen aan [finalcode](), heeft het wel geholpen aan het beter begrijpen wat wij willen realiseren aan het project.  
 
 #### Selecting a Model
+Voor het trainen heb ik niet specifiek een model gekozen, maar meer de [code](/src/RL-test2.py) aangepast naar mijn wensen. De code had al een [Environment (Class Area)]() en een [Agent (Class Container)]() die ik heb aangepast. 
 #### Configuring a Model
 #### Training a Model
 #### Evaluating a Model
