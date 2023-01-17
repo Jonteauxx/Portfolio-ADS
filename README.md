@@ -107,7 +107,9 @@ Als groep hadden we eerst besloten dat een ieder een model zou proberen te train
 Voor het trainen heb ik niet specifiek een model gekozen, maar meer de [code](/src/RL-test2.py) aangepast naar mijn wensen. De code had al een [Environment (Class Area)](/src/RL-test2.py#L35-L48) en een [Agent (Class Container)](/src/RL-test2.py#L52-L116) die ik heb aangepast.
 
 #### Configuring a Model
+De [Environment (Class Area)](/src/RL-test2.py#L35-L48) definieert een array van 3x3 gevuld met nullen. Nul stelt voor dat er op die plek nog niets staat en dus wordt het aangegeven met een ' '. Elke plek dat een container bevat wordt met een 'X' aangegeven en wordt dus een 1.
 
+De [Agent (Class Container)](/src/RL-test2.py#L52-L116) kiest als eerst een random containertype en zet het neer op de kade. Het geeft de coördinaten terug en kijkt daarna wat de volgende actie is. Er wordt eerst eromheen gekeken naar [de legale moves](/src/RL-test2.py#L97-109) en [de mogelijke moves](/src/RL-test2.py#L62-70) en roept dan de [move](/src/RL-test2.py#L72-84) aan om de move te maken. Elke move legaal of illegaal wordt opgeslagen in de [q-table](/src/RL-test2.py#L117-128).
 #### Training a Model
 
 #### Evaluating a Model
