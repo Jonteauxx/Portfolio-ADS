@@ -124,4 +124,4 @@ De [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) kiest als eerst een
 #### Presentations
 
 #### Writing paper
-Behalve dat ik veel literatuuronderzoek heb gedaan voor de paper, heb ik ook het hoofdstuk methodologie geschreven. In dit hoofdstuk leg ik uit welke methoden en technieken we hebben toegepast voor het behalen van de eindresultaten. Ook leg ik hier uit, wat het grootste verschil tussen de 2 modellen is door middel van 2 afbeeldingen met de resultaten. 
+Behalve dat ik veel literatuuronderzoek heb gedaan voor de paper, heb ik ook het hoofdstuk methodologie geschreven. In dit hoofdstuk leg ik uit welke methoden en technieken we hebben toegepast voor het behalen van de eindresultaten. Ook leg ik hier uit, wat het grootste verschil tussen de 2 modellen is door middel van 2 afbeeldingen met de resultaten. De laatste versie van de [research paper](/src/docs/Research%20Paper%20Container%20Project.docx)
