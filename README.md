@@ -9,6 +9,10 @@
 ## Table of Contents  
 - [DataCamp Course Certificates](#datacamp-course-certificates)
 - [Research Project](#research-project)
+  - [Task Definition](#task-definition)
+  - [Evaluation](#evaluation)
+  - [Conclusions](#conclusions)
+  - [Planning](#planning)
 - [Domain Knowledge](#domain-knowledge)
 - [Predictive Analysis](#predictive-analysis)
 - [Communication](#communication)
@@ -46,20 +50,31 @@ Uit ons onderzoek en gesprekken met docenten is gebleken dat de beste oplossing 
 In dit hoofdstuk wordt kort uitgeled wat de probleemstelling en doelstelling zijn. 
 Dit project is de taak van [Cofano](https://www.cofano.nl/nl/) en gaat voornamelijk over het optimalisatieproces van het in- en uitladen van containers op een kade. Momenteel wordt dit proces nog handmatig door een persoon bepaald en uitgevoerd en dit leidt tot heel veel inefficiënt geplaatste containers. Dit heeft als gevolg dat zowel het inladen als het uitladen meer tijd kost. Het is aan ons toegewezen om hiervoor een oplossing voor te bedenken door gebruik te maken van Machine Learning. Wij willen namelijk de tijd, waarbij het proces wordt uitgevoerd, verkorten. 
 
-#### Literature research
-Dit hoofdstuk gaat over de literatuuronderzoek die hebben geleidt tot het kiezen van een model voor het trainen.\
-Het doel is om de beste manier te vinden om containers, met verschillende bestemmingen, op te stapelen op de kade zodat het proces vlotter en sneller verloopt.  
-
-1. Als eerste bron van onderzoek heb ik eerst gekeken naar wat al beschikbaar is in DataCamp. Hier vond ik een [Introduction to Reinforcement Learning](https://www.datacamp.com/tutorial/introduction-reinforcement-learning) tutorial. Hieruit heb ik kunnen leren wat de basis principe van RL is en alle terminologie eromheen. De belangrijkste onderdelen die ik hieruit heb gehaald waren, dat ik een Environment en Agent nodig heb. De Environment voor het project is de kade waar de containers geplaatst worden en de Agent is het model die getraind wordt, die uiteindelijk met een optimalisatieproces komt.
-2. Nadat de basis van RL bekend was, heb ik verschillende opties bekeken zoals [Reinforcement Q-learning from Scratch in Python with OpenAI Gym](https://www.learndatasci.com/tutorials/reinforcement-q-learning-scratch-python-openai-gym/). Alhoewel Q-learning een heel ander concept is dan wat wij wilden toepassen, heb ik uit dit onderzoek veel geleerd over States, Actions, Rewards, Penalties en Policies. Rewards en Penalties beinvloeden de manier waarop een model getraind wordt. Ook kunnen de Policies aangepast worden naar de specificaties van de trainer. 
-
 Om dit ook makkelijker te maken, hebben we besloten om alle containers dezelfde dimensies te geven.\
 Als eerst moeten we kijken naar de kade. Zoals in [deelvraag 1](#deelvragen) besproken, hebben wij eerst gekozen om een 3x3 kade te gebruiken. Rekeninghoudend met de Reach-stacker, die de containers verplaatst, heeft dit vele beperkingen. De Reach-stacker kan alleen via de bay kant een container pakken en plaatsen. Dit heeft heel veel invloed op de manier hoe wij een model zullen trainen namelijk op de 'reward-systeem' (wordt nog uitgelegd). 
 
 Ook moeten wij rekening houden met de verschillende containers met verschillende (eind)bestemmingen. Wij willen het makkelijker maken voor de Reach-stacker om alles in één keer te kunnen pakken, zonder eerst andere containers te verplaatsen. Dit hebben we kunnen realiseren door eerst dezelfde containers op een row of bay te sorteren alvorens een andere container te plaatsen. Ook rekeninghoudend met de volgorde waarop de containers geplaatst worden, worden de laatste containers onderaan geplaatst. Hierbij wordt naar de schema van inkomende en uitgaande schepen gekeken. 
 
-#### Explanation of Terminology, jargon and definitions
+#### Literature research
+Dit hoofdstuk gaat over de literatuuronderzoek die hebben geleidt tot het kiezen van een model voor het trainen.\
+Het doel is om de beste manier te vinden om containers, met verschillende bestemmingen, op te stapelen op de kade zodat het proces vlotter en sneller verloopt.  
 
+1. Als eerste bron van onderzoek heb ik eerst gekeken naar wat al beschikbaar is in DataCamp. Hier vond ik een [Introduction to Reinforcement Learning](https://www.datacamp.com/tutorial/introduction-reinforcement-learning) tutorial. Hieruit heb ik kunnen leren wat de basis principe van RL is en alle terminologie eromheen. De belangrijkste onderdelen die ik hieruit heb gehaald waren, dat ik een Environment en Agent nodig heb. De Environment voor het project is de kade waar de containers geplaatst worden en de Agent is het model die getraind wordt, die uiteindelijk met een optimalisatieproces komt.
+2. Nadat de basis van RL bekend was, heb ik verschillende opties bekeken zoals [Reinforcement Q-learning from Scratch in Python with OpenAI Gym](https://www.learndatasci.com/tutorials/reinforcement-q-learning-scratch-python-openai-gym/). Alhoewel Q-learning een heel ander concept is dan wat wij wilden toepassen, heb ik uit dit onderzoek veel geleerd over States, Actions, Rewards, Penalties en Policies. Rewards en Penalties beinvloeden de manier waarop een model keuzes maakt. Ook kunnen de Policies aangepast worden naar de specificaties van de trainer. 
+3. Deze bron [A Reinforcement Learning Framework for Container Selection and Ship Load Sequencing in ports](https://www.ifaamas.org/Proceedings/aamas2019/pdfs/p2250.pdf) gaat namelijk over hetzelfde probleem, maar anders aangepakt. Hier wordt meer gebruik gemaakt van Linear programmeren. Dit wilden wij niet toepassen omdat het onderwerp Linear programmeren voor vele van ons nog heel onduidelijk is en het zou ook overbodig zijn geweest. Maar het is wel handig om soortgelijke oplossingen in acht te nemen.
+4. [ML| Reinforcement Learning Algorithm: Python Implementation using Q-learning](https://www.geeksforgeeks.org/ml-reinforcement-learning-algorithm-python-implementation-using-q-learning/?ref=rp). Hier heb ik voor het eerst een implementatie van RL met Q-learning kunnen toepassen. Dit was meer voor het experimenteren met de code, maar het had niets te maken met het project. Hieruit kreeg ik meer inspiratie voor het schrijven van de code voor een Environment.
+5. [Hands-on Intro to Reinforcement Learning in Python](https://towardsdatascience.com/hands-on-introduction-to-reinforcement-learning-in-python-da07f7aaca88): Als laatst heb ik deze bron gevonden, waar een model from scratch is geschreven. Ik heb heel veel aan deze code aangepast om te voldoen aan de eisen van het project. De rewards en penalties heb ik aangepast. Ik moest ook heel veel over Object Oriented Programming leren. Dit maakte de code makkelijker leesbaar en schaalbaar. Ik heb m'n best gedaan dit voor elkaar te krijgen. De code wordt verder in [Predictive Analysis](#predictive-analysis) besproken.
+
+
+#### Explanation of Terminology, jargon and definitions
+De belangrijkste terminolgies die in dit project voorkomen zijn:\
+**- Reinforcement Learning**: is één van de onderdelen van Machine Learning en gaat meer over hoe een Agent leert beslissingen te nemen in een environment om zo een hoog mogelijke reward te behalen. Elke stap resulteert in een positieve of negatieve reward. Aan de hand hiervan kan de Agent betere beslissingen maken met tijd. Een soort trial-and-error. Het uiteindelijke doel hiervan is dat de agent de totale beloning op lange termijn probeert te maximaliseren.  
+**- Environment**: De environment is de omgeving waar de Agent zijn interacties meeheeft, inclusief de staat waarin het systeem zich bevindt. De environment bevat onder andere ook het algoritme voor de rewards en penalties.  
+**- Agent**: De Agent is het model dat beslissingen neemt en acties uitvoert aan de hand van een set van acties.  
+**- Rewards en Penalties**:\
+**- Policies**:\
+**- States**:\
+**- Actions**:\
 
 -----------------------------
 
