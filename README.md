@@ -104,12 +104,12 @@ In deze paragraaf laat ik zien wat ik heb bijgedragen aan het opleveren van de [
 Als groep hadden we eerst besloten dat een ieder een model zou proberen te trainen zodat een ieder ook weet hoe RL werkt. Ik heb een soort werkend model dat ongeveer lijkt op de environment van het project. Dit was meer voor het begrijpen hoe RL werkt. Alhoewel het niet heeft bijgedragen aan [finalcode](), heeft het wel geholpen aan het beter begrijpen wat wij willen realiseren aan het project.  
 
 #### Selecting a Model
-Voor het trainen heb ik niet specifiek een model gekozen, maar meer de [code](/src/RL-test2.py) aangepast naar mijn wensen. De code had al een [Environment (Class Area)](/src/RL-test2.py#L35-L48) en een [Agent (Class Container)](/src/RL-test2.py#L52-L116) die ik heb aangepast.
+Voor het trainen heb ik niet specifiek een model gekozen, maar meer de [code](/src/code/RL-test2.py) aangepast naar mijn wensen. De code had al een [Environment (Class Area)](/src/code/RL-test2.py#L35-L48) en een [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) die ik heb aangepast.
 
 #### Configuring a Model
-De [Environment (Class Area)](/src/RL-test2.py#L35-L48) definieert een array van 3x3 gevuld met nullen. Nul stelt voor dat er op die plek nog niets staat en dus wordt het aangegeven met een ' '. Elke plek dat een container bevat wordt met een 'X' aangegeven en wordt dus een 1.
+De [Environment (Class Area)](/src/code/RL-test2.py#L35-L48) definieert een array van 3x3 gevuld met nullen. Nul stelt voor dat er op die plek nog niets staat en dus wordt het aangegeven met een ' '. Elke plek dat een container bevat wordt met een 'X' aangegeven en wordt dus een 1.
 
-De [Agent (Class Container)](/src/RL-test2.py#L52-L116) kiest als eerst een random containertype en zet het neer op de kade. Het geeft de coördinaten terug en kijkt daarna wat de volgende actie is. Er wordt eerst eromheen gekeken naar [de legale moves](/src/RL-test2.py#L97-L110) en [de mogelijke moves](/src/RL-test2.py#L62-L70) en roept dan de [move](/src/RL-test2.py#L72-L84) aan om de move te maken. Elke move legaal of illegaal wordt opgeslagen in de [q-table](/src/RL-test2.py#L117-L128).
+De [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) kiest als eerst een random containertype en zet het neer op de kade. Het geeft de coördinaten terug en kijkt daarna wat de volgende actie is. Er wordt eerst eromheen gekeken naar [de legale moves](/src/code/RL-test2.py#L97-L110) en [de mogelijke moves](/src/code/RL-test2.py#L62-L70) en roept dan de [move](/src/code/RL-test2.py#L72-L84) aan om de move te maken. Elke move legaal of illegaal wordt opgeslagen in de [q-table](/src/code/RL-test2.py#L117-L128).
 #### Training a Model
 
 #### Evaluating a Model
