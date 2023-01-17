@@ -119,3 +119,6 @@ De [Agent (Class Container)](/src/RL-test2.py#L52-L116) kiest als eerst een rand
 
 ## Communication 
 
+#### Presentations
+#### Writing paper
+
