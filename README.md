@@ -24,6 +24,8 @@
   - [Evaluating a Model](#evaluating-a-model)
   - [Visualizing the outcome of a model](#visualizing-the-outcome-of-a-model)
 - [Communication](#communication)
+  - [Presentations](#presentations)
+  - [Writing Paper](#writing-paper)
 
 
 ## DataCamp Course Certificates
@@ -120,5 +122,6 @@ De [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) kiest als eerst een
 ## Communication 
 
 #### Presentations
+
 #### Writing paper
 
