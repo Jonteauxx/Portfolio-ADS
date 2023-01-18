@@ -24,7 +24,6 @@
   - [Evaluating a Model](#evaluating-a-model)
   - [Visualizing the outcome of a model](#visualizing-the-outcome-of-a-model)
 - [Data Preprocessing](#data-preprocessing)
-  - [Data Cleaning](#data-cleaning)
   - [Data Preparation](#data-preparation)
 - [Communication](#communication)
   - [Presentations](#presentations)
@@ -158,8 +157,10 @@ Geen specifieke model gekozen om te trainen.
 #### Visualizing the outcome of a model
 
 ## Data Preprocessing
-#### Data Cleaning
+In dit hoofdstuk laat ik zien wat ik allemaal aan data preparation heb gedaan voor het FoodBoost project.
+
 #### Data preparation
+[FoodBoost](/src/code/Foodboost.ipynb). Ik heb de verschillende nutrities gecategoriceerd zoals Natrium, eiwit, vezels en koolhydraten. Ik heb voor elke categorie een histogram en boxplot gemaakt om zo een beter overzicht te krijgen van de hoeveelheid en welk nutritie er in een recept zit. Deze tabellen werden aan het eind in één tabel gezet voor om elke nutritie en hoeveelheid in een recept te laten zien
 
 ## Communication 
 
