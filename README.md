@@ -128,11 +128,15 @@ Voor de FoodBoost project heb ik wat data cleaning gedaan -> [FoodBoost-DataClea
 Voor de Container project heb ik een aantal pogingen gemaakt om mijn eigen Environment en Agent te coderen.  
 [Versie 1](/src/code/Container-Environment-v1.0.ipynb) -> Een poging gemaakt om de code van mij medestudent werkend te krijgen. Hij had een Environment gemaakt en ik de Agent.
 
-[Versie 2](/src/code/Container-Environment-v2.0.ipynb) -> 
+[Versie 2](/src/code/Container-Environment-v3.0.ipynb) -> Dit is de aangepaste versie van de code die ik heb gevonden tijdens mijn literatuuronderzoek
 
-[Versie 3](/src/code/Container-Environment-v3.0.ipynb)
+[Versie 3](/src/code/Container-Environment-v2.0.ipynb) -> Dit is een verkorte versie van versie 2. Hier heb ik me meer verdiept in het OOP gedeelte en probeerde het op deze manier werkend te krijgen.
 
 [Versie 4](/src/code/v1.0.py)
+
+Helaas hebben geen van deze versies een resultaat of goede resultaten opgeleverd. Ik heb hieruit wel meer over OOP geleerd en kan het beter begrijpen dan voorheen.
+
+
 
 #### Selecting a Model
 Voor het trainen heb ik niet specifiek een model gekozen, maar meer de [code](/src/code/RL-test2.py) aangepast naar mijn wensen. De code had al een [Environment (Class Area)](/src/code/RL-test2.py#L35-L48) en een [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) die ik heb aangepast.
