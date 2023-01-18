@@ -23,6 +23,9 @@
   - [Training a Model](#training-a-model)
   - [Evaluating a Model](#evaluating-a-model)
   - [Visualizing the outcome of a model](#visualizing-the-outcome-of-a-model)
+- [Data Preprocessing](#data-preprocessing)
+  - [Data Cleaning](#data-cleaning)
+  - [Data Preparation](#data-preparation)
 - [Communication](#communication)
   - [Presentations](#presentations)
   - [Writing Paper](#writing-paper)
@@ -154,6 +157,9 @@ Geen specifieke model gekozen om te trainen.
 
 #### Visualizing the outcome of a model
 
+## Data Preprocessing
+#### Data Cleaning
+#### Data preparation
 
 ## Communication 
 
