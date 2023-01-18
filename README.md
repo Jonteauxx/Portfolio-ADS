@@ -20,9 +20,6 @@
 - [Predictive Analysis](#predictive-analysis)
   - [Selecting a Model](#selecting-a-model)
   - [Configuring a Model](#configuring-a-model)
-  - [Training a Model](#training-a-model)
-  - [Evaluating a Model](#evaluating-a-model)
-  - [Visualizing the outcome of a model](#visualizing-the-outcome-of-a-model)
 - [Data Preprocessing](#data-preprocessing)
   - [Data Preparation](#data-preparation)
 - [Communication](#communication)
@@ -109,7 +106,6 @@ Onze reward-systeem bestaat uit enkele regels namelijk:
 - Container A moet zoveel mogelijk naast container A geplaats worden en dus geen plek ertussen openlaten.
 - Container C mag niet tussen containers A en A geplaatst worden.
 - Containers die eerder weggaan, mogen niet onderaan/achter geplaatst worden.
-- 
 
 #### Explanation of Terminology, jargon and definitions
 De belangrijkste terminolgies die in dit project voorkomen zijn:\
@@ -122,22 +118,19 @@ De belangrijkste terminolgies die in dit project voorkomen zijn:\
 
 
 ## Predictive Analysis
-In deze paragraaf laat ik zien wat ik heb bijgedragen aan het opleveren van de [finalcode]().  
-Als groep hadden we eerst besloten dat een ieder een model zou proberen te trainen zodat een ieder ook weet hoe RL werkt. Ik heb een soort werkend model dat ongeveer lijkt op de environment van het project. Dit was meer voor het begrijpen hoe RL werkt. Alhoewel het niet heeft bijgedragen aan [finalcode](), heeft het wel geholpen aan het beter begrijpen wat wij willen realiseren aan het project.  
-
-Voor de FoodBoost project heb ik wat data cleaning gedaan -> [FoodBoost-DataCleaning](/src/code/FoodBoost-DataCleaning-v1.0.ipynb) en [FoodBoost-cleanup](/src/code/FoodBoost-cleanup-v1.0.ipynb). Ik heb de verschillende nutrities op een rij gezet.
+In deze paragraaf laat ik zien wat ik heb bijgedragen aan het opleveren van de [finalcode](/src/code/Container_Environment-almost-final.ipynb).  
+Als groep hadden we eerst besloten dat een ieder een model zou proberen te trainen zodat een ieder ook weet hoe RL werkt. Ik heb een soort werkend model dat ongeveer lijkt op de environment van het project. Dit was meer voor het begrijpen hoe RL werkt. Alhoewel het niet heeft bijgedragen aan [finalcode](/src/code/Container_Environment-almost-final.ipynb), heeft het wel geholpen aan het beter begrijpen wat wij willen realiseren aan het project.  
 
 Voor de Container project heb ik een aantal pogingen gemaakt om mijn eigen Environment en Agent te coderen.  
-[Versie 1](/src/code/Container-Environment-v1.0.ipynb) -> Een poging gemaakt om de code van mij medestudent werkend te krijgen. Hij had een Environment gemaakt en ik de Agent.
+- [Versie 1](/src/code/Container-Environment-v1.0.ipynb) -> Een poging gemaakt om de code van mij medestudent werkend te krijgen. Hij had een Environment gemaakt en ik de Agent.
 
-[Versie 2](/src/code/Container-Environment-v3.0.ipynb) -> Dit is de aangepaste versie van de code die ik heb gevonden tijdens mijn literatuuronderzoek
+- [Versie 2](/src/code/Container-Environment-v3.0.ipynb) -> Dit is de aangepaste versie van de code die ik heb gevonden tijdens mijn literatuuronderzoek
 
-[Versie 3](/src/code/Container-Environment-v2.0.ipynb) -> Dit is een verkorte versie van versie 2. Hier heb ik me meer verdiept in het OOP gedeelte en probeerde het op deze manier werkend te krijgen.
+- [Versie 3](/src/code/Container-Environment-v2.0.ipynb) -> Dit is een verkorte versie van versie 2. Hier heb ik me meer verdiept in het OOP gedeelte en probeerde het op deze manier werkend te krijgen.
 
-[Versie 4](/src/code/v1.0.py)
+- [Versie 4](/src/code/v1.0.py) -> Dit is de laatste versie waaraan ik heb gewerkt om een model werkend te krijgen. Er is niet veel van terecht gekomen. 
 
-Helaas hebben geen van deze versies een resultaat of goede resultaten opgeleverd. Ik heb hieruit wel meer over OOP geleerd en kan het beter begrijpen dan voorheen.
-
+Helaas hebben geen van deze versies een resultaat of een goede resultaten opgeleverd. Ik heb hieruit wel meer over OOP geleerd en kan het beter begrijpen dan voorheen.
 
 
 #### Selecting a Model
@@ -148,19 +141,11 @@ De [Environment (Class Area)](/src/code/RL-test2.py#L35-L48) definieert een arra
 
 De [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) kiest als eerst een random containertype en zet het neer op de kade. Het geeft de coördinaten terug en kijkt daarna wat de volgende actie is. Er wordt eerst eromheen gekeken naar [de legale moves](/src/code/RL-test2.py#L97-L110) en [de mogelijke moves](/src/code/RL-test2.py#L62-L70) en roept dan de [move](/src/code/RL-test2.py#L72-L84) aan om de move te maken. Elke move legaal of illegaal wordt opgeslagen in de [q-table](/src/code/RL-test2.py#L117-L128).
 
-#### Training a Model
-Geen specifieke model gekozen om te trainen.
-
-#### Evaluating a Model
-
-
-#### Visualizing the outcome of a model
-
 ## Data Preprocessing
 In dit hoofdstuk laat ik zien wat ik allemaal aan data preparation heb gedaan voor het FoodBoost project.
 
 #### Data preparation
-[FoodBoost](/src/code/Foodboost.ipynb). Ik heb de verschillende nutrities gecategoriceerd zoals Natrium, eiwit, vezels en koolhydraten. Ik heb voor elke categorie een histogram en boxplot gemaakt om zo een beter overzicht te krijgen van de hoeveelheid en welk nutritie er in een recept zit. Deze tabellen werden aan het eind in één tabel gezet voor om elke nutritie en hoeveelheid in een recept te laten zien
+[FoodBoost](/src/code/Foodboost.ipynb): Ik heb de verschillende nutrities gecategoriseerd zoals Natrium, eiwit, vezels en koolhydraten. Ik heb voor elke categorie een histogram en boxplot gemaakt om zo een beter overzicht te krijgen van de hoeveelheid en welk nutritie er in een recept zit. Deze tabellen werden aan het eind in één tabel gezet om elke nutritie en hoeveelheid per recept te laten zien.
 
 ## Communication 
 
