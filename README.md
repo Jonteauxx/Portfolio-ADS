@@ -51,6 +51,7 @@ Uit ons onderzoek en gesprekken met docenten is gebleken dat de beste oplossing 
 
 #### Conclusions
 
+
 #### Planning
 Als groep hadden wij besloten om niet verder te gaan met het FoodBoost project en een nieuwe uitdaging aan te gaan. 
 Onze planning voor de Container research project zag er als volg uit:
