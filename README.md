@@ -89,9 +89,9 @@ Ook moeten wij rekening houden met de verschillende containers met verschillende
 
 #### Literature research
 Dit hoofdstuk gaat over de literatuuronderzoek die hebben geleidt tot het kiezen van een model voor het trainen.\
-Het doel is om de beste manier te vinden om containers, met verschillende bestemmingen, op te stapelen op de kade zodat het proces vlotter en sneller verloopt.  
+Het doel is om de beste manier te vinden om containers, met verschillende bestemmingen, op te stapelen op de kade zodat het proces vlotter en sneller verloopt. Tijdens een gesprek met onze projectbegeleider hebben wij enkele opties gekregen hoe wij dit konden realiseren. Één van die opties was het gebruikmaken van Reinforcement Learning.    
 
-1. Als eerste bron van onderzoek heb ik eerst gekeken naar wat al beschikbaar is in DataCamp. Hier vond ik een [Introduction to Reinforcement Learning](https://www.datacamp.com/tutorial/introduction-reinforcement-learning) tutorial. Hieruit heb ik kunnen leren wat de basis principe van RL is en alle terminologie eromheen. De belangrijkste onderdelen die ik hieruit heb gehaald waren, dat ik een Environment en Agent nodig heb. De Environment voor het project is de kade waar de containers geplaatst worden en de Agent is het model die getraind wordt, die uiteindelijk met een optimalisatieproces komt.
+1. Als eerste bron van onderzoek heb ik eerst gekeken naar wat al beschikbaar is in DataCamp. Hier vond ik een [Introduction to Reinforcement Learning](https://www.datacamp.com/tutorial/introduction-reinforcement-learning) tutorial. Hieruit heb ik kunnen leren wat de basis principes van RL zijn en alle terminologie eromheen. De belangrijkste onderdelen die ik hieruit heb gehaald waren, dat ik een Environment en Agent nodig heb. De Environment voor het project is de kade waar de containers geplaatst worden en de Agent is het model die getraind wordt, die uiteindelijk met een optimalisatieproces komt.
 2. Nadat de basis van RL bekend was, heb ik verschillende opties bekeken zoals [Reinforcement Q-learning from Scratch in Python with OpenAI Gym](https://www.learndatasci.com/tutorials/reinforcement-q-learning-scratch-python-openai-gym/). Alhoewel Q-learning een heel ander concept is dan wat wij wilden toepassen, heb ik uit dit onderzoek veel geleerd over States, Actions, Rewards, Penalties en Policies. Rewards en Penalties beinvloeden de manier waarop een model keuzes maakt. Ook kunnen de Policies aangepast worden naar de specificaties van de trainer. 
 3. Deze bron [A Reinforcement Learning Framework for Container Selection and Ship Load Sequencing in ports](https://www.ifaamas.org/Proceedings/aamas2019/pdfs/p2250.pdf) gaat namelijk over hetzelfde probleem, maar anders aangepakt. Hier wordt meer gebruik gemaakt van Linear programmeren. Dit wilden wij niet toepassen omdat het onderwerp Linear programmeren voor vele van ons nog heel onduidelijk is en het zou ook overbodig zijn geweest. Maar het is wel handig om soortgelijke oplossingen in acht te nemen.
 4. [ML| Reinforcement Learning Algorithm: Python Implementation using Q-learning](https://www.geeksforgeeks.org/ml-reinforcement-learning-algorithm-python-implementation-using-q-learning/?ref=rp). Hier heb ik voor het eerst een implementatie van RL met Q-learning kunnen toepassen. Dit was meer voor het experimenteren met de code, maar het had niets te maken met het project. Hieruit kreeg ik meer inspiratie voor het schrijven van de code voor een Environment.
@@ -113,9 +113,9 @@ De belangrijkste terminolgies die in dit project voorkomen zijn:\
 **- Reinforcement Learning**: is één van de onderdelen van Machine Learning en gaat meer over hoe een Agent leert beslissingen te nemen in een environment om zo een hoog mogelijke reward te behalen. Elke stap resulteert in een positieve of negatieve reward. Aan de hand hiervan kan de Agent betere beslissingen maken met tijd. Een soort trial-and-error. Het uiteindelijke doel hiervan is dat de agent de totale beloning op lange termijn probeert te maximaliseren.  
 **- Environment**: De environment is de omgeving waar de Agent zijn interacties meeheeft, inclusief de staat waarin het systeem zich bevindt. De environment bevat onder andere ook het algoritme voor de rewards en penalties.  
 **- Agent**: De Agent is het model dat beslissingen neemt en acties uitvoert aan de hand van een set van acties.  
-**- Rewards en Penalties**:Het doel van de Agent is om beloningen te maximaliseren. Net zoals bij elk ML-algoritme, zullen de beloningen eerst bij 0 beginnen en veranderen volgens een bepaald algoritme. De Agent zal proberen de kosten van elke van zijn actiekeuzes te schatten, daarna zal de agent een actie ondernemen, vervolgens zal de agent de echte beloning van die actie ontvangen vanuit de omgeving en uiteindelijk zijn toekomstige voorspellingen voor die specifieke actie aanpassen.\
-**- Policies**: Hoe de logica en parameters gestructureerd worden\
-**- Actions**: De agent komt op één van de totaal mogelijke states tegen en verricht een actie. In ons geval kan de actie een bepaalde richting zijn.
+**- Rewards en Penalties**:Het doel van de Agent is om beloningen te maximaliseren. Net zoals bij elk ML-algoritme, zullen de beloningen eerst bij 0 beginnen en veranderen volgens een bepaald algoritme. De Agent zal proberen de kosten van elke van zijn actiekeuzes te schatten, daarna zal de agent een actie ondernemen, vervolgens zal hij de echte beloning van die actie ontvangen vanuit de omgeving en uiteindelijk zijn toekomstige voorspellingen voor die specifieke actie aanpassen.\
+**- Policies**: Hoe de logica en parameters gestructureerd worden.\
+**- Actions**: De agent komt op één van de totaal mogelijke states tegen en verricht een actie. In ons geval kan de actie een bepaalde richting zijn zoals omhoog, omlaag, links en rechts.  
 
 
 ## Predictive Analysis
@@ -125,7 +125,7 @@ Als groep hadden we eerst besloten dat een ieder een model zou proberen te train
 Voor de Container project heb ik een aantal pogingen gemaakt om mijn eigen Environment en Agent te coderen.  
 - [Versie 1](/src/code/Container-Environment-v1.0.ipynb) -> Een poging gemaakt om de code van mij medestudent werkend te krijgen. Hij had een Environment gemaakt en ik de Agent.
 
-- [Versie 2](/src/code/Container-Environment-v3.0.ipynb) -> Dit is de aangepaste versie van de code die ik heb gevonden tijdens mijn literatuuronderzoek
+- [Versie 2](/src/code/Container-Environment-v3.0.ipynb) -> Dit is de aangepaste versie van de code die ik heb gevonden tijdens mijn literatuuronderzoek.
 
 - [Versie 3](/src/code/Container-Environment-v2.0.ipynb) -> Dit is een verkorte versie van versie 2. Hier heb ik me meer verdiept in het OOP gedeelte en probeerde het op deze manier werkend te krijgen.
 
@@ -140,13 +140,13 @@ Voor het trainen heb ik niet specifiek een model gekozen, maar meer de [code](/s
 #### Configuring a Model
 De [Environment (Class Area)](/src/code/RL-test2.py#L35-L48) definieert een array van 3x3 gevuld met nullen. Nul stelt voor dat er op die plek nog niets staat en dus wordt het aangegeven met een ' '. Elke plek dat een container bevat wordt met een 'X' aangegeven en wordt dus een 1.
 
-De [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) kiest als eerst een random containertype en zet het neer op de kade. Het geeft de coördinaten terug en kijkt daarna wat de volgende actie is. Er wordt eerst eromheen gekeken naar [de legale moves](/src/code/RL-test2.py#L97-L110) en [de mogelijke moves](/src/code/RL-test2.py#L62-L70) en roept dan de [move](/src/code/RL-test2.py#L72-L84) aan om de move te maken. Elke move legaal of illegaal wordt opgeslagen in de [q-table](/src/code/RL-test2.py#L117-L128).
+De [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) kiest als eerst een random containertype en zet het neer op de kade. Het geeft de coördinaten terug en kijkt daarna wat de volgende actie is. Er wordt eerst eromheen gekeken naar [de legale moves](/src/code/RL-test2.py#L97-L110) en [de mogelijke moves](/src/code/RL-test2.py#L62-L70) en roept dan de [move functie](/src/code/RL-test2.py#L72-L84) aan om de move te maken. Elke move legaal of illegaal wordt opgeslagen in de [q-table](/src/code/RL-test2.py#L117-L128).
 
 ## Data Preprocessing
 In dit hoofdstuk laat ik zien wat ik allemaal aan data preparation heb gedaan voor het FoodBoost project.
 
 #### Data preparation
-[FoodBoost](/src/code/Foodboost.ipynb): Ik heb de verschillende nutrities gecategoriseerd zoals Natrium, eiwit, vezels en koolhydraten. Ik heb voor elke categorie een histogram en boxplot gemaakt om zo een beter overzicht te krijgen van de hoeveelheid en welk nutritie er in een recept zit. Deze tabellen werden aan het eind in één tabel gezet om elke nutritie en hoeveelheid per recept te laten zien.
+[FoodBoost](/src/code/Foodboost.ipynb): Ik heb de verschillende nutrities gecategoriseerd zoals Natrium, eiwit, vezels en koolhydraten. Ik heb voor elke categorie een histogram en boxplot gemaakt om zo een beter overzicht te krijgen van de hoeveelheid en welk nutritie er in een recept zit. Deze tabellen werden aan het eind in één grote tabel gezet om elke nutritie en hoeveelheid per recept te laten zien.
 
 ## Communication 
 
@@ -154,4 +154,4 @@ In dit hoofdstuk laat ik zien wat ik allemaal aan data preparation heb gedaan vo
 Ik heb me voorbereid op 2 interne en 1 externe presentaties. Voor de tweede interne presentatie had ik me niet op voorbereid. Ik moest namelijk invallen voor een medestudent die laatste moment had afgezegd. Uit ervaring kan ik zeggen dat ik minder zenuwachtig en beter presenteer wanneer ik niet erop voorbereid ben. Voor de externe presentatie had ik me echt op voorbereid en toen ik aan de beurt was, leek het alsof ik alles was vergeten en moest ik grotendeels oplezen wat ik had geschreven. Maar over het algemeen vind ik dat ik m'n best heb gedaan en dat ik ook goed de vragen van het publiek kon beantwoorden. In dit [mapje](/src/presentaties) zijn alle presentaties te vinden.
 
 #### Writing paper
-Behalve dat ik veel literatuuronderzoek heb gedaan voor de paper, heb ik ook het hoofdstuk methodologie geschreven. In dit hoofdstuk leg ik uit welke methoden en technieken we hebben toegepast voor het behalen van de eindresultaten. Hier laat ik zien, wat de verschillen tussen de 2 modellen is door middel van literatuuronderzoek en ook 2 afbeeldingen met de resultaten. Ook leg ik hier uit hoe de reward en penalty functies zijn ingericht in onze environment. De laatste versie van de [research paper](/src/docs/Research%20Paper%20Container%20Project.docx).
+Behalve dat ik veel literatuuronderzoek heb gedaan voor de paper, heb ik ook het hoofdstuk methodologie geschreven. In dit hoofdstuk leg ik uit welke methoden en technieken we hebben toegepast voor het behalen van de eindresultaten. Hier laat ik zien, wat de verschillen tussen de 2 modellen zijn door middel van literatuuronderzoek en ook 2 afbeeldingen met de resultaten. Ook leg ik hier uit hoe de reward en penalty functies zijn ingericht in onze environment. Dit is de laatste versie van de [research paper](/src/docs/Research%20Paper%20Container%20Project.docx).
