@@ -125,7 +125,7 @@ Als groep hadden we eerst besloten dat een ieder een model zou proberen te train
 
 Voor de FoodBoost project heb ik wat data cleaning gedaan -> [FoodBoost-DataCleaning](/src/code/FoodBoost-DataCleaning-v1.0.ipynb) en [FoodBoost-cleanup](/src/code/FoodBoost-cleanup-v1.0.ipynb). Ik heb de verschillende nutrities op een rij gezet.
 
-Voor de Container project heb ik een aantal pogingen gemaakt om mijn eigen Environment en Agent te coderen. 
+Voor de Container project heb ik een aantal pogingen gemaakt om mijn eigen Environment en Agent te coderen.  
 [Versie 1](/src/code/Container-Environment-v1.0.ipynb) -> Een poging gemaakt om de code van mij medestudent werkend te krijgen. Hij had een Environment gemaakt en ik de Agent.
 
 [Versie 2](/src/code/Container-Environment-v2.0.ipynb) -> 
