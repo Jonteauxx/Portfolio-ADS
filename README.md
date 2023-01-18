@@ -60,13 +60,13 @@ Onze planning voor de Container research project zag er als volg uit:
 In de eerste sprint heb ik kennisgemaakt met de opdrachtomschrijving. Het was een nieuw project dus dit eiste opnieuw veel onderzoek. Daarna heb ik naar de dataset gekeken zodat ik ongeveer een beeld had waarmee we te maken hadden. Samen met de groep hebben wij de hoofdvraag en deelvragen geformuleerd. Dit moest ook goedgekeurd worden door de projectbegeleiders. Ik heb gelijk heel wat literatuuronderzoek gedaan zonder dat we echt wisten wat we wilden doen. Ik zocht namelijk naar soortgelijke projecten die al door anderen zijn opgelost.
 
 **Sprint 2 (31 oct - 13 nov 2022):**
-Tijdens sprint 2 heb ik gericht literatuuronderzoek gedaan toen wij al wisten hoe wij Reinforcement Learningen wilden toepassen om dit probleem op te oplossen. De datapreprocessen/cleaning werd door 1 persoon gedaan omdat hij iets verder wist wat hij met de data wilde doen. Ik heb wel naar de code gekeken en geprobeerd te begrijpen. De DataCamp courses hebben hierbij heel veel geholpen. 
+Tijdens sprint 2 heb ik gericht literatuuronderzoek gedaan toen wij al wisten hoe wij Reinforcement Learningen wilden toepassen om dit probleem op te oplossen zie [afbeelding](/src/Trello/Literatuuronderzoek%20RL%20uitvoeren.png). De datapreprocessen/cleaning werd door 1 persoon gedaan omdat hij iets verder wist wat hij met de data wilde doen. Ik heb wel naar de code gekeken en geprobeerd te begrijpen. De DataCamp courses hebben hierbij heel veel geholpen. 
 
 **Sprint 3 (14 nov - 27 nov 2022):**
-Tijdens sprint 3 zagen we dat we een achterstand hadden op de andere groepen. We besloten om dus een ieder voor zich met een oplossing te komen. Een ieder moest een RL toepassen op een simpele trainingsset. Mijn deel wordt verder in [Predictive Analysis](#predictive-analysis) besproken. 
+Tijdens sprint 3 zagen we dat we een achterstand hadden op de andere groepen. We besloten om dus een ieder voor zich met een oplossing te komen. Een ieder moest een RL toepassen op een simpele trainingsset zie [afbeelding](/src/Trello/Alternatieve%20implementatie%20coderen%20van%20RL.png). Mijn deel wordt verder in [Predictive Analysis](#predictive-analysis) besproken. 
 
 **Sprint 4 (28 nov - 11 dec 2022):**
-Tijdens sprint 4 hebben we samen als groep besloten wie wat zou doen in de Research paper. Ik heb het hoofdstuk 'Methodologie' op mezelf genomen. zie [afbeedling](/src/Trello/Alternatieve%20implementatie%20coderen%20van%20RL.png)
+Tijdens sprint 4 hebben we samen als groep besloten wie wat zou doen in de Research paper. Ik heb het hoofdstuk 'Methodologie' op mezelf genomen. zie [afbeedling](/src/Trello/Opstellen%20van%20het%20hoofdstuk%20'Methodologie'%20in%20het%20Research%20Paper.png)
 
 **Sprint 5 (12 dec - 25 dec 2022):**
 
