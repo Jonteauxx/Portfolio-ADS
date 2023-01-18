@@ -39,7 +39,7 @@ Voordat wij van start zijn gegaan met het kiezen van een model, hebben wij eerst
 #### Hoofdvraag
 - *Hoe kan ervoor gezorgd worden dat containers op de kade op een efficiënte manier opgestapeld kunnen worden, zodat de afnemer van de containers hier makkelijk bij kan?*
 
-De [hoofdvraag](#hoofdvraag) wordt in het kopje [Domain Knowledge](#domain-knowledge) beschreven en beantwoordt.\
+De [hoofdvraag](#hoofdvraag) wordt in het kopje [Domain Knowledge](#domain-knowledge) beschreven en beantwoordt.
 
 #### Deelvragen
 - *Hoe ziet de layout van de desbetreffende kade eruit?*
@@ -74,7 +74,9 @@ Onze reward-systeem bestaat uit enkele regels namelijk:
 - Containers mogen niet op de eerste bay geplaatst worden waardoor de Reach-stacker belemmerd wordt.
 - Container A moet zoveel mogelijk naast container A geplaats worden en dus geen plek ertussen openlaten.
 - Container C mag niet tussen containers A en A geplaatst worden.
-(nog enkele regels hier plaatsen)
+- Containers die eerder weggaan, mogen niet onderaan/achter geplaatst worden.
+- 
+
 
 #### Literature research
 Dit hoofdstuk gaat over de literatuuronderzoek die hebben geleidt tot het kiezen van een model voor het trainen.\
