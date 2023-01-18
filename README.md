@@ -66,7 +66,7 @@ Tijdens sprint 2 heb ik gericht literatuuronderzoek gedaan toen wij al wisten ho
 Tijdens sprint 3 zagen we dat we een achterstand hadden op de andere groepen. We besloten om dus een ieder voor zich met een oplossing te komen. Een ieder moest een RL toepassen op een simpele trainingsset. Mijn deel wordt verder in [Predictive Analysis](#predictive-analysis) besproken. 
 
 **Sprint 4 (28 nov - 11 dec 2022):**
-Tijdens sprint 4 hebben we samen als groep besloten wie wat zou doen in de Research paper. 
+Tijdens sprint 4 hebben we samen als groep besloten wie wat zou doen in de Research paper. Ik heb het hoofdstuk 'Methodologie' op mezelf genomen. zie [afbeedling](/src/Trello[)](src/Trello/Alternatieve implementatie coderen van RL.png)
 
 **Sprint 5 (12 dec - 25 dec 2022):**
 
