@@ -69,11 +69,13 @@ Tijdens sprint 3 zagen we dat we een achterstand hadden op de andere groepen. We
 Tijdens sprint 4 hebben we samen als groep besloten wie wat zou doen in de Research paper. Ik heb het hoofdstuk 'Methodologie' op mezelf genomen. zie [afbeedling](/src/Trello/Opstellen%20van%20het%20hoofdstuk%20'Methodologie'%20in%20het%20Research%20Paper.png)
 
 **Sprint 5 (12 dec - 25 dec 2022):**
+Tijdens sprint 5 heb ik grotendeels aan de Research paper gewerkt. Literatuur verzamelt en in het document gegooid. Ook heb ik een start gemaakt aan de opmaak van mijn portfolio.
 
 **Sprint 6 (09 jan - 22 jan 2023):**
+Tijdens sprint 6 ben ik verder gegaan aan de Research paper en mijn portfolio. 
 
 **Sprint 7 (23 jan - 05 feb 2023):**
-
+Tijdens sprint 7 hebben we zowel de paper als portfolio al afgerond en ingeleverd. De RL code wordt nog verfijnd voor betere resultaten. 
 
 ## Domain Knowledge
 #### Introduction of the subject field
@@ -120,6 +122,14 @@ De belangrijkste terminolgies die in dit project voorkomen zijn:\
 ## Predictive Analysis
 In deze paragraaf laat ik zien wat ik heb bijgedragen aan het opleveren van de [finalcode]().  
 Als groep hadden we eerst besloten dat een ieder een model zou proberen te trainen zodat een ieder ook weet hoe RL werkt. Ik heb een soort werkend model dat ongeveer lijkt op de environment van het project. Dit was meer voor het begrijpen hoe RL werkt. Alhoewel het niet heeft bijgedragen aan [finalcode](), heeft het wel geholpen aan het beter begrijpen wat wij willen realiseren aan het project.  
+
+Voor de FoodBoost project heb ik wat data cleaning gedaan -> [FoodBoost-DataCleaning](/src/code/FoodBoost-DataCleaning-v1.0.ipynb) en [FoodBoost-cleanup](/src/code/FoodBoost-cleanup-v1.0.ipynb). Ik heb de verschillende nutrities op een rij gezet.
+
+Voor de Container project heb ik een aantal pogingen gemaakt om mijn eigen Environment en Agent te coderen. 
+[Versie 1](/src/code/Container-Environment-v1.0.ipynb) -> Een poging gemaakt om de code van mij medestudent werkend te krijgen. Hij had een Environment gemaakt en ik de Agent.
+[Versie 2](/src/code/Container-Environment-v2.0.ipynb) -> 
+[Versie 3](/src/code/Container-Environment-v3.0.ipynb)
+[Versie 4](/src/code/v1.0.py)
 
 #### Selecting a Model
 Voor het trainen heb ik niet specifiek een model gekozen, maar meer de [code](/src/code/RL-test2.py) aangepast naar mijn wensen. De code had al een [Environment (Class Area)](/src/code/RL-test2.py#L35-L48) en een [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) die ik heb aangepast.
