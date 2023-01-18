@@ -127,8 +127,11 @@ Voor de FoodBoost project heb ik wat data cleaning gedaan -> [FoodBoost-DataClea
 
 Voor de Container project heb ik een aantal pogingen gemaakt om mijn eigen Environment en Agent te coderen. 
 [Versie 1](/src/code/Container-Environment-v1.0.ipynb) -> Een poging gemaakt om de code van mij medestudent werkend te krijgen. Hij had een Environment gemaakt en ik de Agent.
+
 [Versie 2](/src/code/Container-Environment-v2.0.ipynb) -> 
+
 [Versie 3](/src/code/Container-Environment-v3.0.ipynb)
+
 [Versie 4](/src/code/v1.0.py)
 
 #### Selecting a Model
