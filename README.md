@@ -53,6 +53,26 @@ Uit ons onderzoek en gesprekken met docenten is gebleken dat de beste oplossing 
 #### Conclusions
 
 #### Planning
+Als groep hadden wij besloten om niet verder te gaan met het FoodBoost project en een nieuwe uitdaging aan te gaan. 
+Onze planning voor de Container research project zag er als volg uit:
+
+**Sprint 1 (10 oct - 23 oct 2022):** 
+In de eerste sprint heb ik kennisgemaakt met de opdrachtomschrijving. Het was een nieuw project dus dit eiste opnieuw veel onderzoek. Daarna heb ik naar de dataset gekeken zodat ik ongeveer een beeld had waarmee we te maken hadden. Samen met de groep hebben wij de hoofdvraag en deelvragen geformuleerd. Dit moest ook goedgekeurd worden door de projectbegeleiders. Ik heb gelijk heel wat literatuuronderzoek gedaan zonder dat we echt wisten wat we wilden doen. Ik zocht namelijk naar soortgelijke projecten die al door anderen zijn opgelost.
+
+**Sprint 2 (31 oct - 13 nov 2022):**
+Tijdens sprint 2 heb ik gericht literatuuronderzoek gedaan toen wij al wisten hoe wij Reinforcement Learningen wilden toepassen om dit probleem op te oplossen. De datapreprocessen/cleaning werd door 1 persoon gedaan omdat hij iets verder wist wat hij met de data wilde doen. Ik heb wel naar de code gekeken en geprobeerd te begrijpen. De DataCamp courses hebben hierbij heel veel geholpen. 
+
+**Sprint 3 (14 nov - 27 nov 2022):**
+Tijdens sprint 3 zagen we dat we een achterstand hadden op de andere groepen. We besloten om dus een ieder voor zich met een oplossing te komen. Een ieder moest een RL toepassen op een simpele trainingsset. Mijn deel wordt verder in [Predictive Analysis](#predictive-analysis) besproken. 
+
+**Sprint 4 (28 nov - 11 dec 2022):**
+Tijdens sprint 4 hebben we samen als groep besloten wie wat zou doen in de Research paper. 
+
+**Sprint 5 (12 dec - 25 dec 2022):**
+
+**Sprint 6 (09 jan - 22 jan 2023):**
+
+**Sprint 7 (23 jan - 05 feb 2023):**
 
 
 ## Domain Knowledge
@@ -65,19 +85,6 @@ Als eerst moeten we kijken naar de kade. Zoals in [deelvraag 1](#deelvragen) bes
 
 Ook moeten wij rekening houden met de verschillende containers met verschillende (eind)bestemmingen. Wij willen het makkelijker maken voor de Reach-stacker om alles in één keer te kunnen pakken, zonder eerst andere containers te verplaatsen. Dit hebben we kunnen realiseren door eerst dezelfde containers op een row of bay te sorteren alvorens een andere container te plaatsen. Ook rekeninghoudend met de volgorde waarop de containers geplaatst worden, worden de laatste containers onderaan geplaatst. Hierbij wordt naar de schema van inkomende en uitgaande schepen gekeken. 
 
-#### Reinforcement Learning en PPO
-
-RL kan op verschillende manieren benadert worden. Bij RL hebben wij eerst een [Environment]() nodig. In ons geval is het een 3x3 kade die gevuld moet worden met verschillende containers. Om de optimale oplossing te krijgen, maken wij gebruik van een reward-systeem. Dit houdt in dat de [Agent]() bij elke plaatsing van een container, een positieve of negatieve reward kan krijgen. Dit is noodzakelijk voor het trainen van het model. Uit de rewards kan het model leren welke moves beter zijn. Elke move krijgt een reward, geeft een state terug en bepaald zijn volgende actie. 
-PPO is nieuw model van [OpenAI](https://openai.com/blog/openai-baselines-ppo/) en dat is Proximal Policy Optimization.
-
-Onze reward-systeem bestaat uit enkele regels namelijk:
-- Containers mogen niet op de eerste bay geplaatst worden waardoor de Reach-stacker belemmerd wordt.
-- Container A moet zoveel mogelijk naast container A geplaats worden en dus geen plek ertussen openlaten.
-- Container C mag niet tussen containers A en A geplaatst worden.
-- Containers die eerder weggaan, mogen niet onderaan/achter geplaatst worden.
-- 
-
-
 #### Literature research
 Dit hoofdstuk gaat over de literatuuronderzoek die hebben geleidt tot het kiezen van een model voor het trainen.\
 Het doel is om de beste manier te vinden om containers, met verschillende bestemmingen, op te stapelen op de kade zodat het proces vlotter en sneller verloopt.  
@@ -89,6 +96,17 @@ Het doel is om de beste manier te vinden om containers, met verschillende bestem
 5. [Hands-on Intro to Reinforcement Learning in Python](https://towardsdatascience.com/hands-on-introduction-to-reinforcement-learning-in-python-da07f7aaca88): Als laatst heb ik deze bron gevonden, waar een model from scratch is geschreven. Ik heb heel veel aan deze code aangepast om te voldoen aan de eisen van het project. De rewards en penalties heb ik aangepast. Ik moest ook heel veel over Object Oriented Programming leren. Dit maakte de code makkelijker leesbaar en schaalbaar. Ik heb m'n best gedaan dit voor elkaar te krijgen. De code wordt verder in [Predictive Analysis](#predictive-analysis) besproken.
 
 
+#### Reinforcement Learning
+
+RL kan op verschillende manieren benadert worden. Bij RL hebben wij eerst een Environment nodig. In ons geval is het een 3x3 kade die gevuld moet worden met verschillende containers. Om de optimale oplossing te krijgen, maken wij gebruik van een reward-systeem. Dit houdt in dat de Agent bij elke plaatsing van een container, een positieve of negatieve reward kan krijgen. Dit is noodzakelijk voor het trainen van het model. Uit de rewards kan het model leren welke moves beter zijn. Elke move krijgt een reward, geeft een state terug en bepaald zijn volgende actie. 
+
+Onze reward-systeem bestaat uit enkele regels namelijk:
+- Containers mogen niet op de eerste bay geplaatst worden waardoor de Reach-stacker belemmerd wordt.
+- Container A moet zoveel mogelijk naast container A geplaats worden en dus geen plek ertussen openlaten.
+- Container C mag niet tussen containers A en A geplaatst worden.
+- Containers die eerder weggaan, mogen niet onderaan/achter geplaatst worden.
+- 
+
 #### Explanation of Terminology, jargon and definitions
 De belangrijkste terminolgies die in dit project voorkomen zijn:\
 **- Reinforcement Learning**: is één van de onderdelen van Machine Learning en gaat meer over hoe een Agent leert beslissingen te nemen in een environment om zo een hoog mogelijke reward te behalen. Elke stap resulteert in een positieve of negatieve reward. Aan de hand hiervan kan de Agent betere beslissingen maken met tijd. Een soort trial-and-error. Het uiteindelijke doel hiervan is dat de agent de totale beloning op lange termijn probeert te maximaliseren.  
@@ -97,10 +115,6 @@ De belangrijkste terminolgies die in dit project voorkomen zijn:\
 **- Rewards en Penalties**:Het doel van de Agent is om beloningen te maximaliseren. Net zoals bij elk ML-algoritme, zullen de beloningen eerst bij 0 beginnen en veranderen volgens een bepaald algoritme. De Agent zal proberen de kosten van elke van zijn actiekeuzes te schatten, daarna zal de agent een actie ondernemen, vervolgens zal de agent de echte beloning van die actie ontvangen vanuit de omgeving en uiteindelijk zijn toekomstige voorspellingen voor die specifieke actie aanpassen.\
 **- Policies**: Hoe de logica en parameters gestructureerd worden\
 **- Actions**: De agent komt op één van de totaal mogelijke states tegen en verricht een actie. In ons geval kan de actie een bepaalde richting zijn.
-
------------------------------
-
-
 
 
 ## Predictive Analysis
@@ -114,9 +128,12 @@ Voor het trainen heb ik niet specifiek een model gekozen, maar meer de [code](/s
 De [Environment (Class Area)](/src/code/RL-test2.py#L35-L48) definieert een array van 3x3 gevuld met nullen. Nul stelt voor dat er op die plek nog niets staat en dus wordt het aangegeven met een ' '. Elke plek dat een container bevat wordt met een 'X' aangegeven en wordt dus een 1.
 
 De [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) kiest als eerst een random containertype en zet het neer op de kade. Het geeft de coördinaten terug en kijkt daarna wat de volgende actie is. Er wordt eerst eromheen gekeken naar [de legale moves](/src/code/RL-test2.py#L97-L110) en [de mogelijke moves](/src/code/RL-test2.py#L62-L70) en roept dan de [move](/src/code/RL-test2.py#L72-L84) aan om de move te maken. Elke move legaal of illegaal wordt opgeslagen in de [q-table](/src/code/RL-test2.py#L117-L128).
+
 #### Training a Model
+Geen specifieke model gekozen om te trainen.
 
 #### Evaluating a Model
+
 
 #### Visualizing the outcome of a model
 
