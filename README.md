@@ -11,7 +11,6 @@
 - [Research Project](#research-project)
   - [Task Definition](#task-definition)
   - [Evaluation](#evaluation)
-  - [Conclusions](#conclusions)
   - [Planning](#planning)
 - [Domain Knowledge](#domain-knowledge)
   - [Introduction of the subject field](#introduction-of-the-subject-field)
@@ -28,11 +27,12 @@
 
 
 ## DataCamp Course Certificates
-Voor de start van de minor Applied Data Science, was Python nog heel onbekend voor mij. Door de nodige python kennis te kunnen ontwikkellen kreeg ik verplichte cursussen om te volgen, die ook hebben meegeholpen aan het uiteindelijke resultaat voor de minor. Deze cursussen waren te volgen op DataCamp en hiervoor kreeg ik voor elke behaalde cursus een [certificaat](/DataCamp) 
+Voor de start van de minor Applied Data Science, was Python nog heel onbekend voor mij. Door de nodige python kennis te kunnen ontwikkelen kreeg ik verplichte cursussen om te volgen, die ook hebben meegeholpen aan het uiteindelijke resultaat voor de minor. Deze cursussen waren te volgen op [DataCamp](https://app.datacamp.com/learn) en hiervoor kreeg ik voor elke behaalde cursus een [certificaat](/DataCamp) 
 
 ## Research Project
 
 #### Task Definition
+De aanleiding van het project was dat wij door middel van een softwareoplosiing, het Container Loading Proces veel efficiënter en optimaal laten verlopen. Dit is belangrijk om de kosten te minimaliseren en ook om meer tijd te winnen. 
 Voordat wij van start zijn gegaan met het kiezen van een model, hebben wij eerst samen de hoofdvragen en deelvragen geformuleerd. Dit heeft het makkelijker gemaakt voor ons om aan de slag te gaan.
 
 #### Hoofdvraag
@@ -48,9 +48,14 @@ Voor het trainen van een model, hebben wij eerst ervoor gekozen om een 3x3 (row 
 Uit ons onderzoek en gesprekken met docenten is gebleken dat de beste oplossing voor dit probleem is, het gebruikmaken van Reinforcement Learning (RL). RL is een heel uitgebreid onderwerp en heeft een aantal modellen die gebruikt kunnen worden. Om de beste model te kunnen kiezen, moesten wij eerst alle modellen uitproberen en testen. Hieruit zijn wij met 2 modellen gekomen nl. PPO (Proximal Policy Optimization) en A2C (Advantage Actor Critic). Uiteindelijk hebben wij toch ervoor gekozen om met PPO verder te gaan en dat wordt in het kopje [Domain Knowledge](#domain-knowledge) verder uitgelegd.
 
 #### Evaluation
+Gedurende de samenwerken met het groepje, heb ik enkele dingen opgemerkt. Deze opmerking heb ik in een [Retrospective](/src/) gezet, gecategoriseerd als 'Start', 'Stop' en 'Doorgaan'.
 
-#### Conclusions
+Toelichting:  
+**Start**: Het is weleens voorgekomen dat we fysiek wilden afspreken op school, maar niet iedereen aanwezig kon zijn. Hierdoor doen we het of zonder de persoon of helemaal niet meer. Dit had makkelijk opgelost kunnen worden om gewoon via Teams af te spreken en de belangrijke punten door te nemen online en dan kan de rest wel fysiek ontmoeten. Bij elkaar komen heeft wel z'n voordelen en één daarvan is dat we met meer ideeën komen en we makkelijker op in kunnen gaan. Zo leren we elkaar beter kennen en ook de zwakke en sterke punten van elk groepslid. 
 
+**Stoppen**: Laat komen en niet komen opdagen zijn normaal in elke groep. Ik heb ook een paar keren verzuimd of weleens laat aangekomen, maar belangrijk is dat er aan deze eigenschappen wordt gewerkt zodat er in de toekomst een betere band is tussen elkaar. Het laat komen en verzuimen kan maken dat een ander student je gaat vooroordelen alvorens je wat aan het project hebt gedaan. Dit wil je voorkomen omdat dit ook veel invloed op je eindresultaat zal hebben. 
+
+**Doorgaan**: Zoals in elke groep zijn er altijd studenten die echt goed zijn in een specifieke taak. Zo ook in ons groepje was er altijd iemand die goed in Scrum was en ook iedereen een taakje kon toewijzen. Deze persoon nam de leiding meestal en deed goed zijn best. Ook zijn er anderen die meer over programmeren weten dan de rest en kunnen makkelijk code schrijven. Deze persoon twijfelde nooit eraan om degene die niet zo goed zijn in het programmeren, te helpen en uit te leggen wat hij gedaan heeft. Dit zijn enkele punten van de groep die ik extra goed vond omdat ik zo ook beter mijn taken kon doen en niet het gevoel krijgen dat ik door de rest van de groep wordt uitgesloten.
 
 #### Planning
 Als groep hadden wij besloten om niet verder te gaan met het FoodBoost project en een nieuwe uitdaging aan te gaan. 
@@ -154,4 +159,4 @@ In dit hoofdstuk laat ik zien wat ik allemaal aan data preparation heb gedaan vo
 Ik heb me voorbereid op 2 interne en 1 externe presentaties. Voor de tweede interne presentatie had ik me niet op voorbereid. Ik moest namelijk invallen voor een medestudent die laatste moment had afgezegd. Uit ervaring kan ik zeggen dat ik minder zenuwachtig en beter presenteer wanneer ik niet erop voorbereid ben. Voor de externe presentatie had ik me echt op voorbereid en toen ik aan de beurt was, leek het alsof ik alles was vergeten en moest ik grotendeels oplezen wat ik had geschreven. Maar over het algemeen vind ik dat ik m'n best heb gedaan en dat ik ook goed de vragen van het publiek kon beantwoorden. In dit [mapje](/src/presentaties) zijn alle presentaties te vinden.
 
 #### Writing paper
-Behalve dat ik veel literatuuronderzoek heb gedaan voor de paper, heb ik ook het hoofdstuk methodologie geschreven. In dit hoofdstuk leg ik uit welke methoden en technieken we hebben toegepast voor het behalen van de eindresultaten. Hier laat ik zien, wat de verschillen tussen de 2 modellen zijn door middel van literatuuronderzoek en ook 2 afbeeldingen met de resultaten. Ook leg ik hier uit hoe de reward en penalty functies zijn ingericht in onze environment. Dit is de laatste versie van de [research paper](/src/docs/Research%20Paper%20Container%20Project.docx).
+Behalve dat ik veel literatuuronderzoek heb gedaan voor de paper, heb ik ook het hoofdstuk methodologie geschreven. In dit hoofdstuk leg ik uit welke methoden en technieken we hebben toegepast voor het behalen van de eindresultaten. Hier laat ik zien, wat de verschillen tussen de 2 modellen zijn door middel van verwijzingen naar het literatuur en ook 2 afbeeldingen met de resultaten. Ook leg ik hier uit hoe de reward en penalty functies zijn ingericht in onze environment. Dit is de laatste versie van de [Research Paper](/src/docs/Research%20Paper%20Container%20Project.docx).
