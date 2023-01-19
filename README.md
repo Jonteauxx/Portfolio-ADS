@@ -48,7 +48,7 @@ Voor het trainen van een model, hebben wij eerst ervoor gekozen om een 3x3 (row 
 Uit ons onderzoek en gesprekken met docenten is gebleken dat de beste oplossing voor dit probleem is, het gebruikmaken van Reinforcement Learning (RL). RL is een heel uitgebreid onderwerp en heeft een aantal modellen die gebruikt kunnen worden. Om de beste model te kunnen kiezen, moesten wij eerst alle modellen uitproberen en testen. Hieruit zijn wij met 2 modellen gekomen nl. PPO (Proximal Policy Optimization) en A2C (Advantage Actor Critic). Uiteindelijk hebben wij toch ervoor gekozen om met PPO verder te gaan en dat wordt in het kopje [Domain Knowledge](#domain-knowledge) verder uitgelegd.
 
 #### Evaluation
-Gedurende de samenwerken met het groepje, heb ik enkele dingen opgemerkt. Deze opmerking heb ik in een [Retrospective](/src/) gezet, gecategoriseerd als 'Start', 'Stop' en 'Doorgaan'.
+Gedurende de samenwerken met het groepje, heb ik enkele dingen opgemerkt. Deze opmerking heb ik in een [Retrospective](/src/Trello/Retrospective.png) gezet, gecategoriseerd als 'Start', 'Stop' en 'Doorgaan'.
 
 Toelichting:  
 **Start**: Het is weleens voorgekomen dat we fysiek wilden afspreken op school, maar niet iedereen aanwezig kon zijn. Hierdoor doen we het of zonder de persoon of helemaal niet meer. Dit had makkelijk opgelost kunnen worden om gewoon via Teams af te spreken en de belangrijke punten door te nemen online en dan kan de rest wel fysiek ontmoeten. Bij elkaar komen heeft wel z'n voordelen en één daarvan is dat we met meer ideeën komen en we makkelijker op in kunnen gaan. Zo leren we elkaar beter kennen en ook de zwakke en sterke punten van elk groepslid. 
