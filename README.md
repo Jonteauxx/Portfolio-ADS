@@ -151,31 +151,26 @@ De [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) kiest als eerst een
 In dit hoofdstuk laat ik zien wat ik allemaal aan data preprocessing heb gedaan voor 2 projecten. De dataset heb ik van [Kaggle](https://www.kaggle.com/code/devananjelito/ml-temperature-prediction/data). Het gaat namelijk om het voorspellen van de gemiddelde temperaturen over de gehele wereld. En omdat ik uit Suriname kom wilde ik de gemiddelde temperaturen van een specifieke periode (mijn geboorte jaar 1997) middels plots laten zien. Helaas heb ik geen model kunnen trainen met deze data omdat ik tenminste 2 kolommen aan data nodig had hiervoor en dat had ik niet. Het project dat ging over het voorspellen van de gemiddelde temperaturen over de gehele wereld leg ik hieronder verder uit. Dat ander project is [hier](/src/code/temp-in-suriname.ipynb) te vinden. 
 
 #### Data exploration
-Voordat ik van start ging met het cleanen van de data, wilde ik eerst weten met wat voor data ik te maken heb. Door de .head(), .info(), .columns, .isnull() en .sum() functies aan te roepen op de dataset, kan ik in één keer zien wat ik allemaal heb. Ik zag dat ik kolommen heb die ik niet ga gebruiken, dus die kunnen alvast weg. Ook de sum van alle NaN waardes krijg ik te zien. 
+Als eerst heb ik de nodige [libraries geimporteerd](/src/code/libraries.png) en gedownload als die nodig was. Voordat ik van start ging met het cleanen van de data, wilde ik eerst weten met wat voor data ik te maken heb. Door de [.head(), .info(), .columns, .isnull() en .sum()](/src/code/functies.png) functies aan te roepen op de dataset, kan ik in één keer zien wat ik allemaal heb. Ik zag dat ik [kolommen](/src/code/kolommen.png) heb die ik niet ga gebruiken, dus die kunnen alvast weg. Ook de sum van alle [NaN waardes](/src/code/NaN.png) krijg ik te zien. 
 
 #### Data cleansing
 Voor het cleanen van de data heb ik het volgende gedaan:
-Eerst een functie gemaakt die de ongebruikte kolommen dropped, de kolommen met 'Uncertainty' erachter (wat eigenlijk overbodig is. Dit kon ook gewoon in één regel). Daarna heb ik de 'dt' kolom omgezet naar een 'datetime' object en de naam verandert naar 'Year'. Vervolgens heb ik de 'Year' kolom als index gezet voor de dataset en de NaN waardes gedropped. Ook heb ik alle data vanaf 1915 geselecteerd. Dit was al meer dan genoeg data om te trainen en ook al genoeg cleaning gedaan.  
+Eerst een [functie](/src/code/clean-functie1.png) gemaakt die de ongebruikte kolommen dropped, de kolommen met 'Uncertainty' erachter (wat eigenlijk overbodig is. Dit kon ook gewoon in één regel). Daarna heb ik de 'dt' kolom omgezet naar een 'datetime' object en de naam verandert naar 'Year'. Vervolgens heb ik de 'Year' kolom als index gezet voor de dataset en de NaN waardes gedropped. Ook heb ik alle data vanaf 1915 geselecteerd-> [datacleaning](/src/code/clean-functie2.png). Dit was al meer dan genoeg data om te trainen en ook al genoeg cleaning gedaan. Zo zag de [tabel](/src/code/data-clean-output.png) na alle cleaning er uit.
 
 #### Data preparation
-Nu daar de data clean is, ben ik begonnen met het setten van de ['target vector' en 'feature matrix']() voor het opsplitsen van de data naar [train en test]() data. De [MAE (mean_absolute_error)]() is berekent om een baseline waarde te krijgen.
+Nu daar de data clean is, ben ik begonnen met het setten van de ['target vector' en 'feature matrix'](/src/code/target-vector.png) voor het opsplitsen van de data naar [train en test](/src/code/train-test-split.png) data. De [MAE (mean_absolute_error)](/src/code/MAE.png) is berekent om een baseline waarde te krijgen.
 Voor dit project heb ik 2 modellen gekozen waarvan ik dacht dat het best geschikt waren voor het voorspellen van de gemiddelde temperaturen.
 De modellen die ik gekozen heb zijn de Linear Regression en de Random Forest Regression modellen. 
 
-De [Linear Regression model]() heb ik als volg getraind. 
+De [Linear Regression model](/src/code/LRM.png) heb ik als volg getraind. 
 
-De [Random Forest Regression model]() heb ik als volg getraind.
+De [Random Forest Regression model](/src/code/RFRM.png) heb ik als volg getraind.
 
 #### Data explanation
 De dataset bevat het gemiddelde, de min en max temperatuur dat op land is gemeten vanaf het jaar 1750. Ook is het gemiddelde temperatuur van land en oceaan gemeten. Voor dit project had ik niet alle data nodig, dus heb ik besloten om de data vanaf het jaar 1915 te gebruiken.
 
-
-
-
-
-
 #### Data visualization (exploratory)
-Helaas liep ik een aantal bugs tegen tijdens het plotten. Ik kreeg de 'ValueError: Expected 2D array, got 1D array instead' error en de plots zagen er niet uit als hoe met moest. 
+Helaas liep ik een aantal bugs tegen tijdens het plotten. Ik kreeg de 'ValueError: Expected 2D array, got 1D array instead' error en de plots zagen er niet uit als hoe met moest. Ik heb heel lang over deze error gedaan en uiteindelijk is er niets van terecht gekomen. 
 
 ## Communication 
 
