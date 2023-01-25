@@ -148,10 +148,24 @@ De [Environment (Class Area)](/src/code/RL-test2.py#L35-L48) definieert een arra
 De [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) kiest als eerst een random containertype en zet het neer op de kade. Het geeft de coördinaten terug en kijkt daarna wat de volgende actie is. Er wordt eerst eromheen gekeken naar [de legale moves](/src/code/RL-test2.py#L97-L110) en [de mogelijke moves](/src/code/RL-test2.py#L62-L70) en roept dan de [move functie](/src/code/RL-test2.py#L72-L84) aan om de move te maken. Elke move legaal of illegaal wordt opgeslagen in de [q-table](/src/code/RL-test2.py#L117-L128).
 
 ## Data Preprocessing
-In dit hoofdstuk laat ik zien wat ik allemaal aan data preparation heb gedaan voor het FoodBoost project.
+In dit hoofdstuk laat ik zien wat ik allemaal aan data preprocessing heb gedaan voor een project. De dataset heb ik van [Kaggle](https://www.kaggle.com/code/devananjelito/ml-temperature-prediction/data).
+
+#### Data exploration
+
+
+#### Data cleansing
+
 
 #### Data preparation
 [FoodBoost](/src/code/Foodboost.ipynb): Ik heb de verschillende nutrities gecategoriseerd zoals Natrium, eiwit, vezels en koolhydraten. Ik heb voor elke categorie een histogram en boxplot gemaakt om zo een beter overzicht te krijgen van de hoeveelheid en welk nutritie er in een recept zit. Deze tabellen werden aan het eind in één grote tabel gezet om elke nutritie en hoeveelheid per recept te laten zien.
+
+#### Data explanation
+Voordat ik van start ging met het cleanen van de data, wilde ik eerst weten met wat voor data ik te maken heb. Door de .head(), .info(), .columns, .isnull() en .sum() functies aan te roepen op de dataset, kan ik in één keer zien wat ik allemaal heb. Ik zag dat ik kolommen heb die ik niet ga gebruiken, dus die kunnen alvast weg. Ook de sum van alle NaN waardes krijg ik te zien. 
+
+Voor het cleanen van de data heb ik het volgende gedaan:
+Eerst een functie gemaakt die de ongebruikte kolommen dropped (wat eigenlijk overbodig is. Dit kon ook gewoon in één regel). Daarna heb ik de 'dt' kolom omgezet naar een 'datetime' object
+
+#### Data visualization (exploratory)
 
 ## Communication 
 
