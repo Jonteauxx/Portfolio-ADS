@@ -20,7 +20,11 @@
   - [Selecting a Model](#selecting-a-model)
   - [Configuring a Model](#configuring-a-model)
 - [Data Preprocessing](#data-preprocessing)
+  - [Data Exploration](#data-exploration)
+  - [Data Cleansing](#data-cleansing)
   - [Data Preparation](#data-preparation)
+  - [Data Explanation](#data-explanation)
+  - [Data Visualization](#data-visualization-exploratory)
 - [Communication](#communication)
   - [Presentations](#presentations)
   - [Writing Paper](#writing-paper)
@@ -148,7 +152,7 @@ De [Environment (Class Area)](/src/code/RL-test2.py#L35-L48) definieert een arra
 De [Agent (Class Container)](/src/code/RL-test2.py#L52-L116) kiest als eerst een random containertype en zet het neer op de kade. Het geeft de coördinaten terug en kijkt daarna wat de volgende actie is. Er wordt eerst eromheen gekeken naar [de legale moves](/src/code/RL-test2.py#L97-L110) en [de mogelijke moves](/src/code/RL-test2.py#L62-L70) en roept dan de [move functie](/src/code/RL-test2.py#L72-L84) aan om de move te maken. Elke move legaal of illegaal wordt opgeslagen in de [q-table](/src/code/RL-test2.py#L117-L128).
 
 ## Data Preprocessing
-In dit hoofdstuk laat ik zien wat ik allemaal aan data preprocessing heb gedaan voor 2 projecten. De dataset heb ik van [Kaggle](https://www.kaggle.com/code/devananjelito/ml-temperature-prediction/data). Het gaat namelijk om het voorspellen van de gemiddelde temperaturen over de gehele wereld. En omdat ik uit Suriname kom wilde ik de gemiddelde temperaturen van een specifieke periode (mijn geboorte jaar 1997) middels plots laten zien. Helaas heb ik geen model kunnen trainen met deze data omdat ik tenminste 2 kolommen aan data nodig had hiervoor en dat had ik niet. Het project dat ging over het voorspellen van de gemiddelde temperaturen over de gehele wereld leg ik hieronder verder uit. Dat ander project is [hier](/src/code/temp-in-suriname.ipynb) te vinden. 
+In dit hoofdstuk laat ik zien wat ik allemaal aan data preprocessing heb gedaan voor 2 projecten. De dataset heb ik van [Kaggle](https://www.kaggle.com/code/devananjelito/ml-temperature-prediction/data). Het gaat namelijk om het voorspellen van de gemiddelde temperaturen over de gehele wereld. En omdat ik uit Suriname kom wilde ik de gemiddelde temperaturen van een specifieke periode (mijn geboorte jaar 1997) middels plots laten zien. Helaas heb ik geen model kunnen trainen met deze data omdat ik tenminste 2 kolommen aan data nodig had hiervoor en dat had ik niet. Het project dat ging over het voorspellen van de gemiddelde temperaturen over de gehele wereld leg ik hieronder verder uit. De notebook van het ander project is [hier](/src/code/temp-in-suriname.ipynb) te vinden en ook de [dataset](/src/code/GlobalLandTemperaturesByCountry.csv). 
 
 #### Data exploration
 Als eerst heb ik de nodige [libraries geimporteerd](/src/code/libraries.png) en gedownload als die nodig was. Voordat ik van start ging met het cleanen van de data, wilde ik eerst weten met wat voor data ik te maken heb. Door de [.head(), .info(), .columns, .isnull() en .sum()](/src/code/functies.png) functies aan te roepen op de dataset, kan ik in één keer zien wat ik allemaal heb. Ik zag dat ik [kolommen](/src/code/kolommen.png) heb die ik niet ga gebruiken, dus die kunnen alvast weg. Ook de sum van alle [NaN waardes](/src/code/NaN.png) krijg ik te zien. 
@@ -167,7 +171,7 @@ De [Linear Regression model](/src/code/LRM.png) heb ik als volg getraind.
 De [Random Forest Regression model](/src/code/RFRM.png) heb ik als volg getraind.
 
 #### Data explanation
-De dataset bevat het gemiddelde, de min en max temperatuur dat op land is gemeten vanaf het jaar 1750. Ook is het gemiddelde temperatuur van land en oceaan gemeten. Voor dit project had ik niet alle data nodig, dus heb ik besloten om de data vanaf het jaar 1915 te gebruiken.
+De dataset bevat het gemiddelde, de min en max temperatuur dat op land is gemeten vanaf het jaar 1750. Ook is het gemiddelde temperatuur van land en oceaan gemeten. Voor dit project had ik niet alle data nodig, dus heb ik besloten om de data vanaf het jaar 1915 te gebruiken. De [notebook](/src/code/GlobalTemp.ipynb) van dit project en de [dataset](/src/code/GlobalTemperatures.csv)
 
 #### Data visualization (exploratory)
 Helaas liep ik een aantal bugs tegen tijdens het plotten. Ik kreeg de 'ValueError: Expected 2D array, got 1D array instead' error en de plots zagen er niet uit als hoe met moest. Ik heb heel lang over deze error gedaan en uiteindelijk is er niets van terecht gekomen. 
